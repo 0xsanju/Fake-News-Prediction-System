@@ -7,7 +7,7 @@
   <img src="https://img.shields.io/github/repo-size/luisosorio3214/Fake-News-Prediction-System">
   <img src="https://img.shields.io/badge/Type_of_ML-Binary_Classification-orange">
   <img src="https://img.shields.io/badge/License-MIT-yellow">
-  <a href="https://colab.research.google.com/drive/1uTNiXHIw1mA83yzXXxtfpUtZWwPu4jyl?usp=sharing"><img 
+  <a href="https://colab.research.google.com/drive/15DzR2BfqstNcyQ46GkrFTPZxODEXhf9r?usp=sharing"><img 
   src="https://colab.research.google.com/assets/colab-badge.svg"></a>
   <a href="https://fake-news-prediction-system-cbf8inpsn5v.streamlit.app/"><img 
   src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg"></a>
@@ -31,7 +31,7 @@
     <li><a href="#business-problem" target="_parent">Business Problem</a></li>
     <li><a href="#data-source">Data Source</a></li>
     <li><a href="#methods">Methods</a></li>
-    <li>Tech Stack</li>
+    <li><a href="#tech-stack">Tech Stack</a></li>
     <li>Quick glance at the results</li>
     <li>Lessons learned and recommendation</li>
     <li>Limitation and what can be improved</li>
@@ -69,7 +69,7 @@
     <ul>
       <li>Exploratory Data Analysis</li>
       <li>Text Cleaning using Regex</li>
-      <li>Term Frequency-Inverse Focument Frequency</li>
+      <li>Term Frequency-Inverse Document Frequency</li>
       <li>Modeling</li>
       <li>Deployment</li>
     </ul>
@@ -80,10 +80,20 @@
   <section id="tech-stack">
     <h2>Tech Stack</h2>
     <ul>
-      <li>Python (refer to requirements.txt for the packages used in this project)</li>
-      <li>Streamlit (interface for model)</li>
+      <li>Python (Refer to requirements.txt for the packages used in this project)</li>
+      <li>Streamlit (Interface for model)</li>
       <li>Google Cloud (Data Storage)</li>
     </ul>
   </section>
 </p>
 
+<p>
+  <section id="quick-glance">
+    <h2>Quick Glance at the Results</h2>
+    <ul>
+      <li>Python (Refer to requirements.txt for the packages used in this project)</li>
+      <li>Streamlit (Interface for model)</li>
+      <li>Google Cloud (Data Storage)</li>
+    </ul>
+  </section>
+</p>
