@@ -7,18 +7,18 @@ import string
 from pathlib import Path
 
 # load our data frame samples
-fake_path = Path(__file__) / "Sample Data\\true_samples.csv"
+fake_path = Path(__file__).parents[0] / "Sample Data/fake_samples.csv"
 fake_sample = pd.read_csv(fake_path)
 
-true_path =  Path(__file__) / "Sample Data\\true_samples.csv"
+true_path =  Path(__file__).parents[0] / "Sample Data/true_samples.csv"
 true_sample = pd.read_csv(true_path)
 
 # load our saved models using pickle 
 
-tree_path = Path(__file__) / "Models\\decision_tree.sav"
+tree_path = Path(__file__).parents[0] / "Models/decision_tree.sav"
 decision_tree = pickle.load(open(tree_path,"rb"))
 
-vectorizer_path = Path(__file__) / "Models\\tfid_algo.sav"
+vectorizer_path = Path(__file__).parents[0] / "Models/tfid_algo.sav"
 vectorizer = pickle.load(open(vectorizer_path, "rb"))
 
 
