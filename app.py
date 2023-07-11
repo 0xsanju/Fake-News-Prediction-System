@@ -4,16 +4,22 @@ import streamlit as st
 import pickle 
 import re
 import string
+from pathlib import Path
 
 # load our data frame samples
-fake_sample = pd.read_csv(r"C:\Users\luis_\Documents\Github - Main\Fake-News-Prediction-System\Sample Data\fake_samples.csv")
+fake_path = Path(__file__) + "Sample Data\\true_samples.csv"
+fake_sample = pd.read_csv(fake_path)
 
-true_sample = pd.read_csv(r"C:\Users\luis_\Documents\Github - Main\Fake-News-Prediction-System\Sample Data\true_samples.csv")
+true_path =  Path(__file__)+ "Sample Data\\true_samples.csv"
+true_sample = pd.read_csv(true_path)
 
 # load our saved models using pickle 
 
-decision_tree = pickle.load(open(r"C:\Users\luis_\Documents\Github - Main\Fake-News-Prediction-System\Models\decision_tree.sav","rb"))
-vectorizer = pickle.load(open(r"C:\Users\luis_\Documents\Github - Main\Fake-News-Prediction-System\Models\tfid_algo.sav", "rb"))
+tree_path = Path(__file__)+ "Models\\decision_tree.sav"
+decision_tree = pickle.load(open(tree_path,"rb"))
+
+vectorizer_path = Path(__file__)+ "Models\\tfid_algo.sav"
+vectorizer = pickle.load(open(vectorizer_path, "rb"))
 
 
 # create a function to clean text
