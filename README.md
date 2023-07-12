@@ -110,11 +110,15 @@
     <h2>Quick Glance at the Results</h2>
     <p>
       Confusion Matrix of Decision Tree Classifier.
-      <img src="Static/dt_confusion.png">
+      <p>
+        <img src="Static/dt_confusion.png">
+      </p>
     </p>
     <p>
       ROC curve of Decision Tree Classifier.
-      <img src="Static/dt_roc.png">
+      <p>
+        <img src="Static/dt_roc.png">
+      </p>
     </p>
     <p>
       Top  3 models (with default hyper-parameters)
