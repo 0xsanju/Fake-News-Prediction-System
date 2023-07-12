@@ -1,8 +1,8 @@
-<p>
-  <h1 align="center">Fake News Prediction System</h1>
-  <h2 align="center">Web App</h2>
+<h1 align="center">Fake News Prediction System</h1>
+<p align="center">
+  <img src="Static/fake_news.jpg" width="800" height="250" allow="autoplay">
 </p>
-<img src="Static/fake_news.jpg" width="840" height="200" allow="autoplay">
+
 <p>
   <img src="https://img.shields.io/badge/Python_Version-3.10%2B-blue" title="Python Version">
   <img src="https://img.shields.io/github/last-commit/luisosorio3214/Fake-News-Prediction-System">
