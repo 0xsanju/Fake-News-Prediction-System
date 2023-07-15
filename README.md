@@ -140,7 +140,7 @@
           <td>99%</td>
         </tr>
       </table>
-
+      </p>
       <p>
         <ul>
           <li>Final Model used: Decision Tree Classifier</li>
