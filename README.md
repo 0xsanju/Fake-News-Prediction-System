@@ -85,7 +85,7 @@
     <ul>
       <li>Python (Refer to requirements.txt for the packages used in this project)</li>
       <li>Streamlit (Interface for model)</li>
-      <li>Google Cloud (Data Storage)</li>
+      <li>Google Drive (Data Storage)</li>
     </ul>
   </section>
 </p>
@@ -94,7 +94,7 @@
   <section id="nlp">
     <h2>Natural Language Processing</h2>
     <p>
-      Since we are given a data frame consisting of observations of articles, in order to implement our machine learning models which only underestand numbers we have to figure out how to convert our texts into specific mathematical terms. In other words we must tokenize our words so we are able to extract meaning or a pattern for our specific use case. Recall the goal is to determine whether an article contains fake news or not thus we should consider tokenizing words rather than senetences since theres various ways we tokenize text. I ended up choosing a vectorizer called TF-IDF (Term Frequency-Inverse Document Frequency) which captures the importance of a word in a document relative to a corpus of documents. Before applying the vectorizer, we clean the text using regex and got rid of special characters or words that provide no special use case in our specific prediction. Now here is a step-by-step explanation on how TF-IDF vectorization works:
+      Since we are given a data frame consisting of observations of articles, in order to implement our machine learning models which only understand numbers we have to figure out how to convert our texts into specific mathematical terms. In other words we must tokenize our words so we are able to extract meaning or a pattern for our specific use case. Recall, the goal is to determine whether an article contains fake news or not thus we should consider tokenizing words rather than sentences since certain words in a article might make an article stand out for containing misinformation. I ended up choosing a vectorizer called TF-IDF (Term Frequency-Inverse Document Frequency) which captures the importance of a word in a document relative to a corpus of documents. Before applying the vectorizer, we clean the text using regex and got rid of special characters or words that provide no special use case in our specific prediction. Now here is a step-by-step explanation on how TF-IDF vectorization works:
       <ol>
         <li>Term Frequency (TF): TF measures the importance of a term within a document. It calculates the frequency of a term (word) in a document divided by the total number of terms in that document. The assumption is that the more frequently a term appears in a document, the more important it is.</li>
         <li>Inverse Document Frequency (IDF): IDF measures the rarity or uniqueness of a term across the entire corpus of documents. It is calculated by taking the total number of documents in the corpus divided by the number of documents that contain the term. IDF assigns higher weights to terms that are less common in the corpus, as they are considered more informative or distinctive.</li>
@@ -121,7 +121,7 @@
       </p>
     </p>
     <p>
-      Top  3 models (with default hyper-parameters)
+      Top 3 models on the testing set (with default parameters)
       <table style="width:100%">
         <tr>
           <th>Model</th>
@@ -140,6 +140,15 @@
           <td>99%</td>
         </tr>
       </table>
+
+      <p>
+        <ul>
+          <li>Final Model used: Decision Tree Classifier</li>
+          <li>Why choose Decision Tree Classifier compared to the other models: I chose Decision Tree compared to gradient boosting since decision tree is the more efficient model. In terms of computation power the gradient boosting was far more expensive since it is actually running multiple decision trees in the background and the accuracy stayed about the same compared to the single decision tree. A good argument was to use Logistic Regression model since we can toy around our metrics and sacrifice a single percent in our accuracy metric. Logistic Regression is also an adequate model for this situation and provides more flexibility, however, it was necessary.  </li>
+          <li>Metric used: Accuracy</li>
+          <li>Why choose Accuracy as a metric: Now the goal for this project is to correctly identify a false news article, however it is important to keep in mind the consequences of incorrectly identifying a news article as fake, when it actuality it was some real news. In this case we actually want to consider a high specificity rate but then we don't want to have a low metric in recall. Therefore, we want an even balance of both scores so having a good accuracy score would be the best solution. Also its important to note that when our target variable has imbalanced classes, more real articles than fake ones in our case then it is sometimes preferred to use the F1-score metric since we have to take into account the discrepancies the imbalanced classes might contribute to our accuracy. However, in the modeling phase our models actually performed fairly well despite being using unseen data which is why I choose accuracy over F1-score.</li>
+        </ul>
+      </p>
     </p>
   </section>
 </p>
@@ -152,27 +161,27 @@
     <p>
       MIT License
 
-Copyright (c) 2022 Stern Semasuka
+      Copyright (c) 2022 Stern Semasuka
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+      Permission is hereby granted, free of charge, to any person obtaining a copy
+      of this software and associated documentation files (the "Software"), to deal
+      in the Software without restriction, including without limitation the rights
+      to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+      copies of the Software, and to permit persons to whom the Software is
+      furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+      The above copyright notice and this permission notice shall be included in all
+      copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+      IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+      FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+      AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+      LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+      OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+      SOFTWARE.
 
-Learn more about <a href="https://choosealicense.com/licenses/mit/">MIT</a> license
+      Learn more about <a href="https://choosealicense.com/licenses/mit/">MIT</a> license
     </p>
   </section>
 </p>
