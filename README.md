@@ -36,23 +36,24 @@
     <li><a href="#tech-stack">Tech Stack</a></li>
     <li><a href="#nlp">Natural Language Processing</a></li>
     <li><a href="#quick-glance">Quick glance at the results</a></li>
-    <li>Lessons learned and recommendation</li>
+    <li><a href="#lesson-learned">Lessons learned and recommendation</a></li>
     <li>Limitation and what can be improved</li>
     <li>Run Locally</li>
     <li>Explore the notebook</li>
     <li>Deployment on streamlit</li>
     <li>App deployed on streamlit</li>
     <li>Repository structure</li>
-    <li>Contribution</li>
+    <li><a href="#contribution">Contribution</a></li>
     <li><a href="#license">License</a></li>
   </ul>
 </p>
+
 
 <P>
   <section id="business-problem">
     <h2>Business Problem</h2>
     <p>
-      This app predicts if a news article contains misinformation which can mislead the public and bring social conflicts. In era of technology and social media, fake news has been more of an issue it has become quite difficult to distinguish the validity of the news. The danger of fake news can manipulate people's perception of reality, influence politics, and promote false advertising. This app will predict the probability of the news article of containing fake news. This app is intended for everyone in which the article yyou reading is in question and want to investigate further before taking anything at face-value. 
+      This app predicts if a news article contains misinformation which can mislead the public and bring social conflicts. In era of technology and social media, fake news has been more of an issue it has become quite difficult to distinguish the validity of the news. The danger of fake news can manipulate people's perception of reality, influence politics, and promote false advertising. This app will predict the probability of the news article of containing fake news. This app is intended for everyone in which the article you reading is in question and want to investigate further before taking anything at face-value. 
     </p>
   </section>
 </P>
@@ -153,7 +154,37 @@
   </section>
 </p>
 
+<p>
+  <section id="lesson-learned">
+  <h2>Lessons Learned and Recommendation</h2>
+  <p>
+    <ul>
+      <li> This project involved natural language processing and through the process I learned the importance of cleaning the text before the modeling phase. Once I cleaned the text using regex my accuracies improved and therefore the model was more equipped in learning the patterns between the documents. Now every piece of text you encounter will require different cleaning steps and its important to skim through various documents to see what steps must be taken in order to create the most optimal model.</li>
+      <li>Another crucial step during the natural language process is picking the adequate algorithm to tokenize the words in the document. This will align with the goal of your project and the appropriate algorithm will then tokenize the words in a special manner to achieve that goal. Some of the most frequently used vectorizer include CountVectorizer, TF-IDF Vectorizer, Word2Vec, and Bert which all takes words and plots them onto a multi-dimensional space differently hence, the word vectorizer. This is where my well-equipped understanding of Linear Algebra comes into play and helps me better understand each algorithm.</li>
+    </ul>
+  </p>
+</p>
 
+<P>
+  <section id="limitation">
+    <h2>Limitation and what can be improved</h2>
+    <p>
+      <ul>
+        <li></li>
+      </ul>
+    </p>
+  </section>
+</p>
+
+
+<p>
+  <section id="contribution">
+    <h2>Contribution</h2>
+    <p>
+      Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change or contribute.
+    </p>
+  </section>
+</p>
 
 <p>
   <section id="license">
@@ -182,6 +213,7 @@
       SOFTWARE.
 
       Learn more about <a href="https://choosealicense.com/licenses/mit/">MIT</a> license
-    </p>
+    
+  </p>
   </section>
 </p>
