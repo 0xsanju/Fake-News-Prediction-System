@@ -42,7 +42,6 @@
     <li><a href="#notebook">Explore the notebook</a></li>
     <li><a href="#streamlit">Deployment on streamlit</a></li>
     <li><a href="#deployed">App deployed on streamlit</a></li>
-    <li>Repository structure</li>
     <li><a href="#contribution">Contribution</a></li>
     <li><a href="#license">License</a></li>
   </ul>
