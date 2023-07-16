@@ -35,9 +35,9 @@
     <li><a href="#methods">Methods</a></li>
     <li><a href="#tech-stack">Tech Stack</a></li>
     <li><a href="#nlp">Natural Language Processing</a></li>
-    <li><a href="#quick-glance">Quick glance at the results</a></li>
-    <li><a href="#lesson-learned">Lessons learned and recommendation</a></li>
-    <li>Limitation and what can be improved</li>
+    <li><a href="#quick-glance">Quick glance at the Results</a></li>
+    <li><a href="#lesson-learned">Lessons learned and Recommendation</a></li>
+    <li><a href="#limitation">Limitation and what can be Improved</a></li>
     <li>Run Locally</li>
     <li>Explore the notebook</li>
     <li>Deployment on streamlit</li>
@@ -160,18 +160,33 @@
   <p>
     <ul>
       <li> This project involved natural language processing and through the process I learned the importance of cleaning the text before the modeling phase. Once I cleaned the text using regex my accuracies improved and therefore the model was more equipped in learning the patterns between the documents. Now every piece of text you encounter will require different cleaning steps and its important to skim through various documents to see what steps must be taken in order to create the most optimal model.</li>
-      <li>Another crucial step during the natural language process is picking the adequate algorithm to tokenize the words in the document. This will align with the goal of your project and the appropriate algorithm will then tokenize the words in a special manner to achieve that goal. Some of the most frequently used vectorizer include CountVectorizer, TF-IDF Vectorizer, Word2Vec, and Bert which all takes words and plots them onto a multi-dimensional space differently hence, the word vectorizer. This is where my well-equipped understanding of Linear Algebra comes into play and helps me better understand each algorithm.</li>
+      <li>Another crucial step during the natural language process is picking the adequate algorithm to tokenize the words in the document. This will align with the goal of your project and then appropriate algorithm will tokenize the words in a special manner to achieve that said goal. Some of the most frequently used vectorizer include CountVectorizer, TF-IDF Vectorizer, Word2Vec, and Bert which all takes words and plots them onto a multi-dimensional space differently hence, the word vectorizer. This is where my well-equipped understanding of Linear Algebra comes into play and helps me better understand each algorithm.</li>
     </ul>
   </p>
 </p>
 
 <P>
   <section id="limitation">
-    <h2>Limitation and what can be improved</h2>
+    <h2>Limitation and what can be Improved</h2>
     <p>
       <ul>
-        <li></li>
+        <li>The first big limitation about this project is that our data merely scratches the surface of all the articles available on the internet. In order to create a big model where we actually are able to detect false news articles we would need to scrape most of the articles off the internet and then train our model. That is an awful amount of data, however, I think it will be necessary for the better of our future. All this artificial Intelligence is making it harder to detect misinformation which extends more than news articles and now extending to false audio/videos. We definitely need to build a system that can detect the real ones from the fake to conserve our perception of reality. </li>
+        <li>Next time, it might be better if we used our Logistic Regression model and use different metrics to optimize our specific results. We might consider accurately predicting misinformation at the cost of misidentifying some real news articles. Depending on our purpose we can surely investigate this further. </li>
+        <li>Another step we can improve or investigate further is our text cleaning phase where we might want to make further adjustments.</li>
+        <li>Another huge limitation is language barriers, where our model focused only on english news articles and might not even recognize no other language. This goes to show to make a large scale model it will take a lot of training data and compute power. </li>
       </ul>
+    </p>
+  </section>
+</p>
+
+<p>
+  <section id="local">
+    <p>
+      First, Open your Command line or terminal abd head to your directory where you want to save the project.
+    </p>
+    <p>
+      <h3>Initialize git</h3>
+      echo git init 
     </p>
   </section>
 </p>
@@ -212,8 +227,7 @@
       OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
       SOFTWARE.
 
-      Learn more about <a href="https://choosealicense.com/licenses/mit/">MIT</a> license
-    
-  </p>
+      Learn more about <a href="https://choosealicense.com/licenses/mit/"> MIT </a> license
+   </p>
   </section>
 </p>
