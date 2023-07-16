@@ -38,10 +38,10 @@
     <li><a href="#quick-glance">Quick glance at the Results</a></li>
     <li><a href="#lesson-learned">Lessons learned and Recommendation</a></li>
     <li><a href="#limitation">Limitation and what can be Improved</a></li>
-    <li>Run Locally</li>
-    <li>Explore the notebook</li>
-    <li>Deployment on streamlit</li>
-    <li>App deployed on streamlit</li>
+    <li><a href="#local">Run Locally</a></li>
+    <li><a href="#notebook">Explore the notebook</a></li>
+    <li><a href="#streamlit">Deployment on streamlit</a></li>
+    <li><a href="#deployed">App deployed on streamlit</a></li>
     <li>Repository structure</li>
     <li><a href="#contribution">Contribution</a></li>
     <li><a href="#license">License</a></li>
@@ -183,19 +183,105 @@
   <section id="local">
     <h2>Run Locally</h2>
     <p>
-      First, Open your Command line or terminal abd head to your directory where you want to save the project.
+      First, Open your Command line or Terminal and head to a directory where you want to save the project.
     </p>
     <p>
-      <h3>Initialize git</h3>
+      <h4>Initialize git</h4>
       <pre>
-        <code>
+        <code style="height: 50%;">
         git init
         </code>
       </pre>
+
+      <h4>Clone the Project</h4>
+      <pre>
+        <code style="height: 50%;">
+        git clone https://github.com/luisosorio3214/Fake-News-Prediction-System.git
+        </code>
+      </pre>
+
+      <h4>Head to project directory</h4>
+      <pre>
+        <code style="height: 50%;">
+        cd Fake-News-Prediction-System
+        </code>
+      </pre>
+
+      <h4>Create a virtual environment using venv</h4>
+      <pre>
+        <code style="height: 50%;">
+        python -m venv <env_name>
+        </code>
+      </pre>
+      
+      <h4>Activate virtual environment</h4>
+      <pre>
+        For Window Users
+        <code style="height: 50%;">
+        <env_name>\Scripts\activate
+        </code>
+        For Mac Users
+        <code style="height: 50%;">
+        source <env_name>/bin/activate
+        </code>
+      </pre>
+      
+      <h4>Install required dependencies from requirements.txt file</h4>
+      <pre>
+        <code style="height: 50%;">
+        pip install -r requirements.txt
+        </code>
+      </pre>
+
+      <h4>Start the streamlit server locally</h4>
+      <pre>
+        <code style="height: 50%;">
+        streamlit run app.py
+        </code>
+      </pre>
+
+    </p>
+    <p>
+    If you are having issues with streamlit, please follow this <a href="https://docs.streamlit.io/library/get-started/installation">tutorial on how to set up streamlit</a>. 
     </p>
   </section>
 </p>
 
+<p>
+  <section id="notebook">
+  <h2>Explore the notebook</h2>
+  <p>
+    To explore the notebook file click <a href="https://github.com/luisosorio3214/Fake-News-Prediction-System/blob/main/Fake%20News%20Prediction.ipynb">here</a>.
+  </p>
+  </section>
+</p>
+
+<p>
+  <section id="streamlit">
+  <h2>Deployment on streamlit</h2>
+  <p>
+    To deploy this project on streamlit share, follow these steps:
+    <ol>
+      <li>Make sure you have a github repository with full project files including the requirements.txt file</li>
+      <li>Go to streamlit <a href="https://share.streamlit.io/">share</a></li>
+      <li>Login with Github, Google, etc.</li>
+      <li>click on new button</li>
+      <li>Select the GitHub repo, branch, python file with the streamlit codes</li>
+      <li>Click Save and Deploy</li>
+    </ol>
+  </p>
+  </section>
+</p>
+
+<p>
+  <section id="deployed">
+  <h2>App deployed on Streamlit</h2>
+  <img src="Gif/gif_streamlit.gif">
+  <p>
+    Video to gif <a href="https://ezgif.com/">tool</a>
+  </p>
+  </section>
+</p>
 
 <p>
   <section id="contribution">
@@ -233,6 +319,6 @@
       SOFTWARE.
 
       Learn more about <a href="https://choosealicense.com/licenses/mit/"> MIT </a> license
-   </p>
+    </p>
   </section>
 </p>
