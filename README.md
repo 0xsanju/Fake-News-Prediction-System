@@ -186,9 +186,11 @@
     </p>
     <p>
       <h3>Initialize git</h3>
+      <p>
       ```bash
       git init
       ```
+      </p>
     </p>
   </section>
 </p>
