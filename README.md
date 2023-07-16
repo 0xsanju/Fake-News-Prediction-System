@@ -186,7 +186,9 @@
     </p>
     <p>
       <h3>Initialize git</h3>
-      echo git init 
+      ```bash
+      git init
+      ```
     </p>
   </section>
 </p>
