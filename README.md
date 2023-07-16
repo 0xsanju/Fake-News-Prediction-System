@@ -184,63 +184,54 @@
     <h2>Run Locally</h2>
     <p>
       First, Open your Command line or Terminal and head to a directory where you want to save the project.
-    </p>
-    <p>
+    </p>    
       <h4>Initialize git</h4>
-      <pre>
-        <code style="height: 50%;">
-        git init
-        </code>
-      </pre>
-
+        <pre>
+          <code style="height: 50%;">
+          git init
+          </code>
+        </pre>
       <h4>Clone the Project</h4>
-      <pre>
-        <code style="height: 50%;">
-        git clone https://github.com/luisosorio3214/Fake-News-Prediction-System.git
-        </code>
-      </pre>
-
+        <pre>
+          <code style="height: 50%;">
+          git clone https://github.com/luisosorio3214/Fake-News-Prediction-System.git
+          </code>
+        </pre>
       <h4>Head to project directory</h4>
-      <pre>
-        <code style="height: 50%;">
-        cd Fake-News-Prediction-System
-        </code>
-      </pre>
-
+        <pre>
+          <code style="height: 50%;">
+          cd Fake-News-Prediction-System
+          </code>
+        </pre>
       <h4>Create a virtual environment using venv</h4>
-      <pre>
-        <code style="height: 50%;">
-        python -m venv <env_name>
-        </code>
-      </pre>
-      
+        <pre>
+          <code style="height: 50%;">
+          python -m venv <env_name>
+          </code>
+        </pre>   
       <h4>Activate virtual environment</h4>
-      <pre>
-        For Window Users
-        <code style="height: 50%;">
-        <env_name>\Scripts\activate
-        </code>
-        For Mac Users
-        <code style="height: 50%;">
-        source <env_name>/bin/activate
-        </code>
-      </pre>
-      
+        <pre>
+          For Window Users
+          <code style="height: 50%;">
+          <env_name>\Scripts\activate
+          </code>
+          For Mac Users
+          <code style="height: 50%;">
+          source <env_name>/bin/activate
+          </code>
+        </pre>
       <h4>Install required dependencies from requirements.txt file</h4>
-      <pre>
-        <code style="height: 50%;">
-        pip install -r requirements.txt
-        </code>
-      </pre>
-
+        <pre>
+          <code style="height: 50%;">
+          pip install -r requirements.txt
+          </code>
+        </pre>
       <h4>Start the streamlit server locally</h4>
-      <pre>
-        <code style="height: 50%;">
-        streamlit run app.py
-        </code>
-      </pre>
-
-    </p>
+        <pre>
+          <code style="height: 50%;">
+          streamlit run app.py
+          </code>
+        </pre>
     <p>
     If you are having issues with streamlit, please follow this <a href="https://docs.streamlit.io/library/get-started/installation">tutorial on how to set up streamlit</a>. 
     </p>
