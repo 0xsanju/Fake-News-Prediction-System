@@ -187,11 +187,11 @@
     </p>
     <p>
       <h3>Initialize git</h3>
-      <p>
-      ```{bash}
-      git init
-      ```
-      </p>
+      <pre>
+        <code>
+        git init
+        </code>
+      </pre>
     </p>
   </section>
 </p>
