@@ -181,13 +181,14 @@
 
 <p>
   <section id="local">
+    <h2>Run Locally</h2>
     <p>
       First, Open your Command line or terminal abd head to your directory where you want to save the project.
     </p>
     <p>
       <h3>Initialize git</h3>
       <p>
-      ```bash
+      ```{bash}
       git init
       ```
       </p>
