@@ -159,7 +159,7 @@
   <p>
     <ul>
       <li> This project involved natural language processing and through the process I learned the importance of cleaning the text before the modeling phase. Once I cleaned the text using regex my accuracies improved and therefore the model was more equipped in learning the patterns between the documents. Now every piece of text you encounter will require different cleaning steps and its important to skim through various documents to see what steps must be taken in order to create the most optimal model.</li>
-      <li>Another crucial step during the natural language process is picking the adequate algorithm to tokenize the words in the document. This will align with the goal of your project and then appropriate algorithm will tokenize the words in a special manner to achieve that said goal. Some of the most frequently used vectorizer include CountVectorizer, TF-IDF Vectorizer, Word2Vec, and Bert which all takes words and plots them onto a multi-dimensional space differently hence, the word vectorizer. This is where my well-equipped understanding of Linear Algebra comes into play and helps me better understand each algorithm.</li>
+      <li>Another crucial step during the natural language process is picking the adequate algorithm to tokenize the words in the document. This will align with the goal of your project and then appropriate algorithm will tokenize the words in a special manner to achieve that said goal. Some of the most frequently used vectorizer include Count Vectorizer, TF-IDF Vectorizer, Word2Vec, and Bert which all takes words and plots them onto a multi-dimensional space differently hence, the word vectorizer. This is where my well-equipped understanding of Linear Algebra comes into play and helps me better understand each algorithm.</li>
     </ul>
   </p>
 </p>
@@ -205,18 +205,18 @@
       <h4>Create a virtual environment using venv</h4>
         <pre>
           <code style="height: 50%;">
-          python -m venv <env_name>
+          python -m venv "env_name"
           </code>
         </pre>   
       <h4>Activate virtual environment</h4>
         <pre>
           For Window Users
           <code style="height: 50%;">
-          <env_name>\Scripts\activate
+          env_name\Scripts\activate
           </code>
           For Mac Users
           <code style="height: 50%;">
-          source <env_name>/bin/activate
+          source env_name/bin/activate
           </code>
         </pre>
       <h4>Install required dependencies from requirements.txt file</h4>
