@@ -56,7 +56,7 @@ def main():
   # write our title 
   st.title("Fake News Prediction System")
   
-  st.write("""Context: In this day in age of technology and social media where anybody can make a post and make it  seem proper/true it has become difficult to determine the validity of several news. The danger of fake news can manipulate people's perception of reality, influence politics, and promote false advertising. It has become a method to stir up and intensify social conflict. Stories that are untrue and that intentionally mislead reader have caused a growing mistrust and confusion amongst the American people.""")
+  st.write("""Context: In this day in age of technology and social media where anybody can make a post and make it  seem proper/true it has become difficult to determine the validity of several news. The danger of fake news can manipulate people's perception of reality, influence politics, and promote false advertising.""")
   
   st.write("""This app predicts if a news article contains Fake News or not. Just copy and paste the text into the following box
             and click on the predict button.""")
